@@ -60,13 +60,13 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 
 const greeting = (word) => {
   // Solution code here...
- return word.toUpperCase()+ "!";
+  return word.toUpperCase() + "!";
 };
 
-const speaker = (words,callback) => {
+const speaker = (words, callback) => {
   // Solution code here...
-  words.forEach((element,index) => {
-    words[index]= greeting(element);
+  words.forEach((element, index) => {
+    words[index] = greeting(element);
   });
   return words;
 };
@@ -89,10 +89,16 @@ Return the modified array.
 
 const addValues = (arr, value) => {
   // Solution code here...
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+    while (times >= 1) {
+      addValues(arr, num);
+      times--;
+    }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
