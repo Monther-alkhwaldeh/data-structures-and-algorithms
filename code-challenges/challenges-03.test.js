@@ -120,12 +120,14 @@ Here is an example of the input:
 const sortByPrice = (arr) => {
   // Solution code here...
   arr.sort((a,b) =>{
-    if(a.price<b.price){
-      return -1;
-    }
     if(b.price<a.price){
       return 1
     }
+    
+    if(a.price<b.price){
+      return -1;
+    }
+    
     return 0;
   })
 return arr;
