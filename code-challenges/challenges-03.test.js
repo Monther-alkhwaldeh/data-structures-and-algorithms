@@ -132,7 +132,6 @@ const sortByPrice = (arr) => {
   })
 return arr;
 };
-// there is mistake by ordering challenge when i use npm test for this challeng its showing me that( It should sort strings by length (2 ms))
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
