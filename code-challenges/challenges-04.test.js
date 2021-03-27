@@ -63,15 +63,7 @@ Write a function named containsWorld that takes in a string or number of any len
 
 const containsWorld = (input) => {
   // Solution code here...
-  // let word=/\world/g;
-  // let containWorld=input.match(word);
-// if(containWorld.includes('world')){
-//   return true;
-// } if(containWorld.includes('WORLD')){
-//   return false;
-// } else if(containWorld) {
-//   return  false;
-//   }
+  
 return input.match(/world/)? true : false;
 
 };
