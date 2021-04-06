@@ -124,6 +124,8 @@ Return either true or false.
 
 const validatePhoneNumber = (phoneNumber) => {
   // Solution code here...
+  return phoneNumber.match(/^([0-9]{3}|\([0-9]{3}\))[^0-9]?([0-9]{3})[^0-9]?([0-9]{4})$/) ? true : false;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
