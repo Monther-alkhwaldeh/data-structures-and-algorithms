@@ -32,6 +32,16 @@ return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
   // Solution code here...
+  const arrayM =  matrix.map(function (arr){ 
+    return arr.reduce(function (num1, num2) {
+      return (num2 > num1) ? num2 : num1;
+    }, 0); 
+  });
+
+
+  return arrayM.reduce(function (num1, num2){
+    return (num2 > num1) ? num2 : num1;
+    }, 0);
   
 };
 
@@ -108,6 +118,9 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   // Solution code here...
+  const hourlyS = [];
+  data.forEach((e, i) => hourlyS.push({ sales: `${e} cookies`, time: hours[i] }));
+  return hourlyS;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -133,6 +146,8 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
+  return arr[2].items[1].quantity;
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
